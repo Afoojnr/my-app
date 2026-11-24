@@ -19,7 +19,7 @@ export default defineConfig([
       '@typescript-eslint/no-explicit-any': 'error',
 
       // One rule for unused code, so you don't get every warning twice.
-      // unused-imports can also delete unused imports on --fix.
+
       '@typescript-eslint/no-unused-vars': 'off',
       'unused-imports/no-unused-imports': 'warn',
       'unused-imports/no-unused-vars': [
