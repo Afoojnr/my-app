@@ -6,6 +6,13 @@ on:
   pull_request:
     branches: [main, dev]
 
+# From GitHub: Settings → Secrets and variables → Actions → Variables.
+
+env:
+  NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
+  NEXT_PUBLIC_APP_ENV: ${{ vars.NEXT_PUBLIC_APP_ENV }}
+  NEXT_PUBLIC_API_URL: ${{ vars.NEXT_PUBLIC_API_URL }}
+
 jobs:
   checks:
     runs-on: ubuntu-latest
